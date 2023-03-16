@@ -101,6 +101,9 @@
                 border-radius: 6px;
                 gap: 30px;
         }
+        @include maxWidth(768px) {
+            width: 300px;
+        }
         
         &.active {
             @include maxWidth(1024px) {
@@ -120,6 +123,11 @@
     font-weight: 500;
     line-height: 16.41px;
     border-radius: 8px;
+
+    @include maxWidth(768px) {
+        padding: 11px 15px;
+    }
+    
 }
 .header-right {
     display: flex;
@@ -139,6 +147,10 @@
     cursor: pointer;
     @include maxWidth(1024px) {
         display: block;
+    }
+    @include maxWidth(768px) {
+        margin-left: 0;
+        padding: 10;
     }
     &-show {
 
