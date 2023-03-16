@@ -1,0 +1,45 @@
+.page {
+    padding-top: 103px;
+    padding-bottom: 113px;
+    width: 100%;
+}
+.page-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.page-title {
+    font-weight: 600;
+    max-width: 447px;
+    font-size: 33px;
+    line-height: 39px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.page-des {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150.19%;
+    max-width: 637px;
+    text-align: center;
+}
+.page-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    gap: 30px;
+    
+    @include maxWidth(1024px) {
+        flex-wrap: wrap;
+        width: 50%;
+    }
+    @include maxWidth(768px) {
+        width: 80%;
+    }
+}
+.page-name {
+    margin-bottom: 16px;
+}

@@ -1,0 +1,64 @@
+html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: $primary-font;
+    font-size: 18px;
+    line-height: 1;
+    color: $text-color;
+    background-color: $white-color;
+    overflow-x: hidden;
+  }
+  input,
+  button,
+  textarea,
+  select {
+    font-family: $primary-font;
+    font-size: 16px;
+    outline: none;
+    border: 0;
+  }
+  input {
+    line-height: normal;
+  }
+  a {
+    color: inherit;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: $primary-font;
+  }
+  section[id] {
+    scroll-margin-top: 30px;
+  }
+  .wrapper {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+  .container {
+    max-width: 1110px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  .btn {
+  }
+  section {
+    
+  }
+  .copy{
+    width: 100%;
+    background-color: $Copy-color;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 60px;
+    padding-bottom: 41px;
+    & h4 {
+      color: $white-color;
+    }
+  }
+  

@@ -1,0 +1,114 @@
+.blog {
+    padding-top: 71px;
+    padding-bottom: 92px;
+    background-color: $Light-color;
+    box-shadow: 0px 15px 15px 4px rgba(195, 195, 195, 0.4941176471);
+
+    &-center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 32px;
+
+        @include maxWidth(1024px) {
+            flex-direction: column;
+            gap: 60px;
+        }
+    }
+
+    &-left {
+        max-width: 631px;
+        @include maxWidth(1024px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+    }
+}
+
+.btn-blog {
+    margin-bottom: 21px;
+    background-color: $primary-color;
+    color: $text-color;
+    font-weight: 500;
+}
+.blog-title {
+    font-weight: 600;
+    font-size: 33px;
+    line-height: 39px;
+    margin-bottom: 26px;
+    @include maxWidth(1024px) {
+        text-align: center;
+    }
+}
+.blog-des {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150.19%;
+    color: $textLight-color;
+    text-align: justify;
+    margin-bottom: 36px;
+    @include maxWidth(1024px) {
+        text-align: center;
+    }
+}
+.blog-feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 65px;
+
+    @include maxWidth(768px) {
+        flex-direction: column;
+        width: 80%;
+    }
+}
+.blog-user {
+
+}
+.blog-user-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 19px;
+    margin-bottom: 7px;
+}
+.blog-user-name {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    
+}
+.blog-user-des {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+    color: $textLight-color;
+
+    text-align: justify;
+}
+
+.blog-right {
+    position: relative;
+    width: 350px;
+    height: 428px;
+
+    @include maxWidth(1024px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &-img1 {
+        width: 100%;
+        height: 100%;
+    }
+
+    &-img2 {
+        position: absolute;
+        bottom: -56px;
+        right: -20px;
+        width: 160px;
+        height: 207px;
+    }
+}

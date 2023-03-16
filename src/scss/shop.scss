@@ -1,0 +1,70 @@
+.shop {
+    margin-top: 125px;
+    margin-bottom: 91px;
+}
+.shop-center {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+
+    @include maxWidth(1024px) {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+    @include maxWidth(768px) {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+}
+.shop-info {
+    
+    & img {
+        margin-bottom: 27px;
+    }
+}
+.shop-name {
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+}
+.shop-des {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 24px;
+}
+.shop-link {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 16px;
+
+    @include maxWidth(768px) {
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    & h4 {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 21px;
+        margin-top: 21px;
+
+        text-transform: uppercase;
+    }
+
+    & a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 18px;
+        color: #929292;
+        letter-spacing: 0.05em;
+        text-transform: capitalize;
+        gap: 13px;
+    }
+}

@@ -1,0 +1,121 @@
+.company{
+    padding-top: 103px;
+    position: relative;
+
+    &::after {
+        content: "";
+        position: absolute;
+        width:  919px;
+        height: 1px;
+        background-color: #E0E0E0;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);   
+    }
+
+    &-center {
+        display: flex;
+        justify-content: center;
+        gap: 125px;
+
+        @include maxWidth(1024px) {
+            flex-direction: column-reverse;
+            align-items: center;
+            gap: 50px;
+        }
+    }
+
+    &-left {
+        position: relative;
+        width: 515px;
+        height: 542px;
+        @include maxWidth(1024px) {
+            width: 315px;
+            height: 342px;
+        }
+        &-img1 {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
+        }
+
+        &-img2 {
+            position: absolute;
+            bottom: -31px;
+            right: -99px;
+            border-radius: 15px;
+            width: 40%;
+            height: 50%;
+        }
+    }
+
+    &-right {
+        flex: 1;
+        @include maxWidth(1024px) {
+            margin: 0 auto;
+           width: 50%;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           flex-direction: column;
+        }
+        @include maxWidth(768px) {
+            width: 80%;
+        }
+    }
+
+    &-content {
+        font-weight: 600;
+        font-size: 33px;
+        line-height: 39px;
+        margin-top: 21px;
+        @include maxWidth(1024px) {
+            text-align: center;
+        }
+    }
+
+    &-des {
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 150.19%;
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 41px;
+        @include maxWidth(1024px) {
+            text-align: center;
+        }
+    }
+
+    &-feedback {
+        margin-bottom: 25px;
+        display: flex;
+        width: 100%;
+        gap: 19px;
+        & div {
+            display: inline-table;
+            width: 46px;
+            height: 46px;
+        }
+    }
+    &-cmt {
+        flex: 1;
+        &-name {
+            margin: 16px 0;
+        }
+        &-des {
+            font-weight: 300;
+            font-size: 14px;
+            line-height: 24px;
+            /* or 171% */
+
+            text-align: justify;
+            letter-spacing: 0.025em;
+        }
+    }
+}
+.btn-company {
+    background-color: $Light-color;
+    color: $text-color;
+    font-weight: 500;
+}
